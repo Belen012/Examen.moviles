@@ -17,7 +17,7 @@ public abstract class AppBaseDato extends RoomDatabase {
     public abstract DatosDAO datosDAO();
 
 
-    static AppBaseDato getInstance(final Context context) {
+    public static AppBaseDato getInstance(final Context context) {
         return Room.databaseBuilder(context, AppBaseDato.class, "database-name").build();
     }
 }

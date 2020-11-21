@@ -11,7 +11,7 @@ import java.util.List;
 import examen.moviles.Datoss;
 
 @Dao
-interface DatosDAO {
+public interface DatosDAO {
     @Insert
     void insertar(Datoss datoss);
 
